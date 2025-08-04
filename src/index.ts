@@ -7,3 +7,5 @@ const students: Student[] = [
     { name: "Amir" },
     { name: "Francis" },
 ];
+
+// Ingen ändring i koden – bara för commit
