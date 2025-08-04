@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="./dist/index.js" defer></script>
 </head>
 <body>
@@ -11,10 +12,12 @@
     <div class="studentlista"> 
         
     </div>
-    <form method="post" id="add-student-form">
-        <label for="student-name">Namn</label>
-        <input type="text" id="student-name" placeholder="Namn på student" required>
-        <button type="submit" id="add-student-btn">Lägg till ny student</button>
+    <form class="add-student-form" method="post" id="add-student-form">
+        <div class="form-field">
+            <label class="form-label" for="student-name">Namn</label>
+            <input class="form-input" type="text" id="student-name" placeholder="Namn på student" required>
+        </div>
+        <button class="btn-submit" type="submit" id="add-student-btn">Lägg till ny student</button>
     </form>        
 </body>
 </html>
