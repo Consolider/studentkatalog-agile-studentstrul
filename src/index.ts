@@ -11,29 +11,20 @@ const students: Student[] = [
 ];
 
 // Dom-manipulation
-const studentContainer = document.querySelector('#studentlista');
+const studentContainer = document.querySelector('#studentlista') as HTMLDivElement;
 
 if (studentContainer) {
-    students.forEach(student => {
-        const p = document.createElement('p'); // Skapar ett <p>-element för varje elev
-        p.textContent = `${student.name}, ${student.age} år`; // <p>-elementets innehåll sätts till studentens namn ålder.
-        studentContainer.appendChild(p);
-    });
-}
-function renderList() {
     students.forEach(student => {
         const li = document.createElement("li");
         
         if ( student.isActive === true ) {
             li.className = "studentlista_item_active"
-            li.innerHTML = `<p>${student.name}. <span>Aktiv.</span></p>`;
+            li.innerHTML = `<p>${student.name}, ${student.age} år, <span>Aktiv.</span></p>`;
         } else {
             li.className = "studentlista_item_inactive"
-            li.innerHTML = `<p>${student.name}. <span>EJ Aktiv.</span></p>`;
+            li.innerHTML = `<p>${student.name}, ${student.age} år, <span>EJ Aktiv.</span></p>`;
         }
         
-        studentList.appendChild(li);
+        studentContainer.appendChild(li);
     });
 }
-
-renderList();

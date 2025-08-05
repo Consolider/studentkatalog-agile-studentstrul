@@ -1,4 +1,4 @@
-.studentlista {
+#studentlista {
     list-style-type: none;
 }
 
@@ -9,7 +9,6 @@
 .studentlista_item_inactive span {
     color: red;
 }
-
 
 .add-student-form {
     display: flex;
