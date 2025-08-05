@@ -14,7 +14,7 @@ const studentContainer = document.querySelector('#studentlista');
 
 if (studentContainer) {
     students.forEach(student => {
-        const p = document.createElement('p'); // Skapar ett <p>-element för varje elev
+        const p = document.createElement('p'); // Skapar ett <p>-element för varje elev.
         p.textContent = `${student.name}, ${student.age} år`; // <p>-elementets innehåll sätts till studentens namn ålder.
         studentContainer.appendChild(p);
     });
