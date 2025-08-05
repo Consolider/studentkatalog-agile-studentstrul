@@ -9,20 +9,21 @@ const students: Student[] = [
     { name: "Francis", isActive: false }
 ];
 
-const ulList = document.querySelector(".studentlista") as HTMLDivElement;
+const studentList = document.querySelector(".studentlista") as HTMLDivElement;
 
 function renderList() {
     students.forEach(student => {
         const li = document.createElement("li");
         
-        li.className = "student-list_item"
         if ( student.isActive === true ) {
-            li.innerHTML = `<p>${student.name}. Aktiv.</p>`;
+            li.className = "studentlista_item_active"
+            li.innerHTML = `<p>${student.name}. <span>Aktiv.</span></p>`;
         } else {
-            li.innerHTML = `<p>${student.name}. EJ Aktiv.</p>`;
+            li.className = "studentlista_item_inactive"
+            li.innerHTML = `<p>${student.name}. <span>EJ Aktiv.</span></p>`;
         }
         
-        ulList.appendChild(li);
+        studentList.appendChild(li);
     });
 }
 

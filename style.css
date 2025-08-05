@@ -2,6 +2,15 @@
     list-style-type: none;
 }
 
+.studentlista_item_active span {
+    color: #4CAF50;
+}
+
+.studentlista_item_inactive span {
+    color: red;
+}
+
+
 .add-student-form {
     display: flex;
     flex-direction: column;
