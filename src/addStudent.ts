@@ -1,6 +1,6 @@
 const form = document.querySelector("#add-student-form") as HTMLFormElement;
 const input = document.querySelector("#student-name") as HTMLInputElement;
-const studentList = document.querySelector(".studentlista") as HTMLDivElement;
+const studentList = document.querySelector("#studentlista") as HTMLDivElement;
 
 function handleAddStudent(event: Event) : void {
     event.preventDefault();
