@@ -1,3 +1,7 @@
+.studentlista {
+    list-style-type: none;
+}
+
 .add-student-form {
     display: flex;
     flex-direction: column;
