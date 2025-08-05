@@ -1,17 +1,17 @@
-interface Student {
-    name: string;
-    age: number;
-}
-
-const students: Student[] = [
+<<<<<<< HEAD
+=======
+"use strict";
+>>>>>>> feature/visa-studentnamn
+const students = [
     { name: "Klara", age: 35 },
     { name: "Amir", age: 20 },
     { name: "Francis", age: 18 },
 ];
-
+<<<<<<< HEAD
+export {};
+=======
 // Dom-manipulation
 const studentContainer = document.querySelector('#studentlista');
-
 if (studentContainer) {
     students.forEach(student => {
         const p = document.createElement('p'); // Skapar ett <p>-element för varje elev
@@ -19,3 +19,5 @@ if (studentContainer) {
         studentContainer.appendChild(p);
     });
 }
+>>>>>>> feature/visa-studentnamn
+//# sourceMappingURL=index.js.map
