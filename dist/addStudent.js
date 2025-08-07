@@ -1,3 +1,4 @@
+"use strict";
 const form = document.querySelector("#add-student-form");
 const input = document.querySelector("#student-name");
 const studentList = document.querySelector(".studentlista");
@@ -10,5 +11,4 @@ function handleAddStudent(event) {
     input.value = "";
 }
 form.addEventListener("submit", handleAddStudent);
-export {};
 //# sourceMappingURL=addStudent.js.map
